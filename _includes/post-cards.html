@@ -10,28 +10,24 @@
       </a>
     {% endif %}
     <div class="post-card-content {% unless post.image %}no-cover{% endunless %}">
-      <a class="post-card-content-link" href="{{ post.url | relative_url }}">
+      <a class="post-card-content-link" >
         <header class="post-card-header">
           {% if post.categories.size > 0 %}
             {% for category in post.categories %}
               {% if forloop.index == post.categories.size %}
-                <span class="post-card-categories">{{ category }}</span>
+                <span class="post-card-categories"></span>
               {% else %}
-                <span class="post-card-categories">{{ category }} / </span>
+                <span class="post-card-categories"></span>
               {% endif %}
             {% endfor %}
           {% endif %}
 
-          <h2 class="post-card-title">{{ post.title }}</h2>
+          <h2 class="post-card-title">SPPlanos</h2>
         </header>
         <section class="post-card-excerpt">
-          {% if post.description %}
-            <p>{{ post.description | truncate: 128 }}</p>
-          {% elsif post.excerpt %}
-            <p>{{ post.excerpt | strip_html | truncate: 128 }}</p>
-          {% else %}
-            <p>{{ post.content | strip_html | truncate: 128 }}</p>
-          {% endif %}
+          <p>Bem-vindo ao site dos Planos Setoriais da Prefeitura de São Paulo. Aqui você encontra informações sobre os projetos que estão sendo desenvolvidos, planejados ou encerrados em cada uma das 32 subprefeituras da cidade. </p>
+          <p>Você pode consultar os objetivos, as diretrizes, as ações e os indicadores de cada plano, além de acompanhar o andamento e os resultados das intervenções urbanas.</p>
+          <p> Você também pode participar do planejamento de uma nova São Paulo, enviando sugestões, críticas ou elogios através dos canais de comunicação disponíveis no site.</p>
         </section>
       </a>
       <footer class="post-card-meta">
