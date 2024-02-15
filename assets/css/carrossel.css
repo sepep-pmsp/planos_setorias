@@ -127,8 +127,8 @@ li:nth-child(8), li:nth-child(8) .card {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background: #FFFFFF;
-	box-shadow: -18px 0px 36px -18px rgb(41 97 105 / 63%), 20px 0px 60px -12px rgba(215, 220, 171, 0.25);
+	background: #f8f5e8;
+	box-shadow: 20px 0px 36px -18px rgb(41 97 105 / 63%), -20px 0px 60px -12px rgba(248, 250, 229, 0.399);
 	border-radius: 50%;
 }
 .second-circle {
@@ -140,7 +140,7 @@ li:nth-child(8), li:nth-child(8) .card {
 	transform: translate(-50%, -50%);
 	background: #ebd5b549;
 	opacity: 0.5;
-	box-shadow: 0px 18px 36px -18px rgba(229, 223, 158, 0.3), 0px 30px 60px -12px rgba(229, 223, 158, 0.25);
+	box-shadow: 0px 18px 36px -18px rgb(41 97 105 / 63%), 0px 30px 60px -12px rgba(229, 223, 158, 0.25);
 	border-radius: 50%;
 }
 .last-circle {
@@ -152,7 +152,7 @@ li:nth-child(8), li:nth-child(8) .card {
 	transform: translate(-50%, -50%);
 	background: #e1ccaf3a;
 	opacity: 0.25;
-	box-shadow: 0px 18px 36px -18px rgba(230, 224, 158, 0.3), 0px 30px 60px -12px rgba(243, 239, 193, 0.229);
+	box-shadow: 0px 18px 36px -18px rgb(41 97 105 / 63%), 0px 30px 60px -12px rgba(243, 239, 193, 0.229);
 	border-radius: 50%;
 }
 .crop {
