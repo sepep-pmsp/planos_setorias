@@ -9,6 +9,10 @@ body {
 	margin: 0;
 }
 
+.carousels{
+	margin: 20px 0 20px 0;
+}
+
 .void {
 	width: 100%;
 	max-width: 1024px;
@@ -44,15 +48,15 @@ li {
 	align-items: flex-start;
 	padding: 16px 24px;
 	gap: 8px;
-	background: #FFFFFF;
-	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1), 0px 16px 32px rgba(0, 0, 0, 0.1);
+	background: #eee0ce89;
+	box-shadow: 0px 4px 12px rgba(17, 57, 70, 0.1), 0px 16px 32px rgba(17, 57, 70, 0.1);
 	border-radius: 12px;
 	font-family: 'Inter', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
-	color: #535062;
+	color: #43766c;
 	animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
 a {
@@ -63,14 +67,8 @@ a {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 150%;
-	color: #3B2ED0;
+	color: #d05c2e;
 	display: block;
-}
-svg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
 }
 
 li:nth-child(2), li:nth-child(2) .card {
@@ -127,8 +125,8 @@ li:nth-child(8), li:nth-child(8) .card {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background: #FFFFFF;
-	box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
+	background: #f8f5e8;
+	box-shadow: 20px 0px 36px -18px rgb(41 97 105 / 63%), -20px 0px 60px -12px rgba(248, 250, 229, 0.399);
 	border-radius: 50%;
 }
 .second-circle {
@@ -138,9 +136,9 @@ li:nth-child(8), li:nth-child(8) .card {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background: #F5F4FE;
+	background: #ebd5b549;
 	opacity: 0.5;
-	box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
+	box-shadow: 0px 18px 36px -18px rgb(41 97 105 / 63%), 0px 30px 60px -12px rgba(229, 223, 158, 0.25);
 	border-radius: 50%;
 }
 .last-circle {
@@ -150,9 +148,9 @@ li:nth-child(8), li:nth-child(8) .card {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	background: #F5F4FE;
+	background: #e1ccaf3a;
 	opacity: 0.25;
-	box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3), 0px 30px 60px -12px rgba(12, 5, 46, 0.25);
+	box-shadow: 0px 18px 36px -18px rgb(41 97 105 / 63%), 0px 30px 60px -12px rgba(243, 239, 193, 0.229);
 	border-radius: 50%;
 }
 .crop {
@@ -167,7 +165,23 @@ li:nth-child(8), li:nth-child(8) .card {
 	animation: pulseGlow 5s linear infinite alternate;
 	background-position: 100% 50%;
 	background-repeat: no-repeat;
-	background-image: radial-gradient(100% 50% at 100% 50%, rgba(60, 26, 229, 0.25) 0%, rgba(60, 26, 229, 0.247904) 11.79%, rgba(59, 26, 229, 0.241896) 21.38%, rgba(58, 26, 229, 0.2324) 29.12%, rgba(57, 26, 229, 0.219837) 35.34%, rgba(55, 26, 229, 0.20463) 40.37%, rgba(53, 26, 229, 0.1872) 44.56%, rgba(51, 26, 229, 0.16797) 48.24%, rgba(48, 26, 229, 0.147363) 51.76%, rgba(46, 26, 229, 0.1258) 55.44%, rgba(44, 26, 229, 0.103704) 59.63%, rgba(41, 26, 229, 0.0814963) 64.66%, rgba(39, 26, 229, 0.0596) 70.88%, rgba(36, 26, 229, 0.038437) 78.62%, rgba(34, 26, 229, 0.0184296) 88.21%, rgba(32, 26, 229, 0) 100%);
+	background-image: radial-gradient(100% 50% at 100% 50%,
+	 rgba(37, 122, 101, 0.25) 0%,
+	  rgba(37, 122, 101, 0.248) 11.79%,
+	   rgba(37, 122, 101, 0.241896) 21.38%,
+	   	 rgba(37, 122, 101, 0.2324) 29.12%,
+	      rgba(37, 122, 101, 0.219837) 35.34%,
+		   rgba(37, 122, 101, 0.20463) 40.37%,
+		    rgba(37, 122, 101, 0.1872) 44.56%,
+		     rgba(37, 122, 101, 0.16797) 48.24%,
+		      rgba(37, 122, 101, 0.147363) 51.76%,
+			   rgba(37, 122, 101, 0.1258) 55.44%,
+			    rgba(37, 122, 101, 0.103704) 59.63%,
+			     rgba(37, 122, 101, 0.0814963) 64.66%,
+			      rgba(37, 122, 101, 0.0596) 70.88%,
+				   rgba(37, 122, 101, 0.038437) 78.62%,
+				    rgba(37, 122, 101, 0.0184296) 88.21%,
+				     rgba(37, 122, 101, 0) 100%);
 }
 .mask:after {
 	content: "";
@@ -176,5 +190,5 @@ li:nth-child(8), li:nth-child(8) .card {
 	height: 100%;
 	right: 0;
 	display: block;
-	background-image: linear-gradient(180deg, rgba(60, 26, 229, 0) 0%, #3C1AE5 50%, rgba(60, 26, 229, 0) 100%);
+	background-image: linear-gradient(180deg, rgba(60, 26, 229, 0) 0%, #10e9d7 50%, rgba(60, 26, 229, 0) 100%);
 }
