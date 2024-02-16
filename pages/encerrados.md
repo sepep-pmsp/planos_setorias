@@ -7,3 +7,4 @@ permalink:  /encerrados/
 
 
 
+{% include _carousels.html %}
