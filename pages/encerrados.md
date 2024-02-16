@@ -24,6 +24,6 @@ permalink:  /encerrados/
     <div class="mask"></div>
     <div class="center-circle"></div>
   <div>
-    <link rel="stylesheet" href="../assets/css/carrossel.css">
+    <link rel="stylesheet" href="../assets/css/carousels.css">
 
 </section>
