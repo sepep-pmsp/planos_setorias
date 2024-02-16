@@ -9,6 +9,10 @@ body {
 	margin: 0;
 }
 
+.carousels{
+	margin: 20px 0 20px 0;
+}
+
 .void {
 	width: 100%;
 	max-width: 1024px;
