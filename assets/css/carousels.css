@@ -37,7 +37,7 @@
 	width: 100%;
 	animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
-.card {
+.cardi {
 	width: 27%;
 	display: flex;
 	flex-direction: column;
@@ -67,25 +67,25 @@
 	display: block;
 }
 
-.list-carou:nth-child(2), .list-carou:nth-child(2) .card {
+.list-carou:nth-child(2), .list-carou:nth-child(2) .cardi {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -1s);
 }
-.list-carou:nth-child(3), .list-carou:nth-child(3) .card {
+.list-carou:nth-child(3), .list-carou:nth-child(3) .cardi {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -2s);
 }
-.list-carou:nth-child(4), .list-carou:nth-child(4) .card {
+.list-carou:nth-child(4), .list-carou:nth-child(4) .cardi {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -3s);
 }
-.list-carou:nth-child(5), .list-carou:nth-child(5) .card {
+.list-carou:nth-child(5), .list-carou:nth-child(5) .cardi {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -4s);
 }
-.list-carou:nth-child(6), .list-carou:nth-child(6) .card {
+.list-carou:nth-child(6), .list-carou:nth-child(6) .cardi {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -5s);
 }
-.list-carou:nth-child(7), .list-carou:nth-child(7) .card {
+.list-carou:nth-child(7), .list-carou:nth-child(7) .cardi {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -6s);
 }
-.list-carou:nth-child(8), .list-carou:nth-child(8) .card {
+.list-carou:nth-child(8), .list-carou:nth-child(8) .cardi {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -7s);
 }
 
