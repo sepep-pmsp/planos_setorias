@@ -67,3 +67,25 @@
     padding: 0 calc(var(--spacing) * 6);
   }
 }
+
+//introdução
+
+
+.blockstyle {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  padding: 20px 20px 20px 40px;
+  border-left: none;
+  position: relative;
+  text-indent: -19px;
+  background-color: #d05c2e44;
+  box-shadow: 2px 1px 9px #8a3d1f;
+  color: #43766c;
+
+}
+
+section#block_content {
+  min-height: 400px;
+  text-align: left
+}
+
