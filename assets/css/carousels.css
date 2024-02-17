@@ -5,10 +5,6 @@
 	--easing: cubic-bezier(0.000, 0.37, 1.000, 0.63);
 }
 
-body {
-	margin: 0;
-}
-
 .carousels{
 	margin: 20px 0 20px 0;
 }
@@ -20,10 +16,10 @@ body {
 	position: relative;
 	aspect-ratio: 1 / 1;
 }
-ul:hover * {
+.messy-list:hover * {
 	animation-play-state: paused;
 }
-ul {
+.messy-list {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -33,7 +29,7 @@ ul {
 	outline: 2px dotted magenta;
 	z-index: 1;
 }
-li {
+.list-carou {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -59,7 +55,7 @@ li {
 	color: #43766c;
 	animation: rotateCCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
-a {
+.hiper {
 	text-decoration: none;
 	color: unset;
 }
@@ -71,25 +67,25 @@ a {
 	display: block;
 }
 
-li:nth-child(2), li:nth-child(2) .card {
+.list-carou:nth-child(2), .list-carou:nth-child(2) .card {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -1s);
 }
-li:nth-child(3), li:nth-child(3) .card {
+.list-carou:nth-child(3), .list-carou:nth-child(3) .card {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -2s);
 }
-li:nth-child(4), li:nth-child(4) .card {
+.list-carou:nth-child(4), .list-carou:nth-child(4) .card {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -3s);
 }
-li:nth-child(5), li:nth-child(5) .card {
+.list-carou:nth-child(5), .list-carou:nth-child(5) .card {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -4s);
 }
-li:nth-child(6), li:nth-child(6) .card {
+.list-carou:nth-child(6), .list-carou:nth-child(6) .card {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -5s);
 }
-li:nth-child(7), li:nth-child(7) .card {
+.list-carou:nth-child(7), .list-carou:nth-child(7) .card {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -6s);
 }
-li:nth-child(8), li:nth-child(8) .card {
+.list-carou:nth-child(8), .list-carou:nth-child(8) .card {
 	animation-delay: calc((var(--rotate-speed)/var(--count)) * -7s);
 }
 
