@@ -1,10 +1,11 @@
-const data = Array.from({ length: 100 })
-  .map((_, i) => `Item ${(i + 1)}`);
+const dataList = Array.from(document.querySelectorAll('.list .item')).map(item => item.textContent);
+
+  
 let perPage = 5;
 const state = {
   page: 1,
   perPage,
-  totalPage: Math.ceil(data.length / perPage),
+  totalPage: Math.ceil(dataList.length / perPage),
   maxVisibleButtons: 5
 };
 const html = {
@@ -81,7 +82,7 @@ const list = {
     let start = page * perPage;
     let end = start + perPage;
 
-    const paginatedItems = data.slice(start, end);
+    const paginatedItems = dataList.slice(start, end);
     paginatedItems.forEach(list.create);
   }
 };
