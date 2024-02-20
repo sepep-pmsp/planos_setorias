@@ -1,6 +1,6 @@
 const dataList = Array.from(document.querySelectorAll('.list .item')).map(item => item.innerHTML);
 
-let perPage = 4;
+let perPage = 6;
 const state = {
     page: 1,
     perPage,
