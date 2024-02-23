@@ -72,3 +72,10 @@
   -webkit-transition: 1.1s ease-in-out;
   transition: 1s ease-in-out;
 }
+.list{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
