@@ -1,9 +1,7 @@
 - title: Home
   url: /
-- title: About
-  url: /about/
-- title: Archive
-  url: /archive.html
+- title: Sobre
+  url: /sobre/
 - title: Planos Elaborados
   url: /elaborados/
 - title: Planos Encerrados
