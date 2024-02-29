@@ -37,6 +37,7 @@
 	width: 100%;
 	animation: rotateCW calc(var(--rotate-speed) * 1s) var(--easing) infinite;
 }
+
 .card {
 	width: 27%;
 	display: flex;
