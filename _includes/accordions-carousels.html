@@ -1,17 +1,21 @@
 <div id="paginate">
   <div class="list">
-
-    {% for plano in site.data.dados_planos limit:1000 %}
+    {% for plano in site.data.planos %}
     <div class="item acordeon">
       <div class="marcacao">
         <div class="escopo">
           <div class="container">
             <div class="card_fixo">
               <figure class="card__thumb">
-                <img src="{{ plano.logo_plano }}" alt="Picture by David Monje" class="card__image">
+
+                {% for dado in site.data.dados_planos %}
+                  {% if dado.nome_do_plano == plano.title %}
+                    <img src="{{ dado.logo_plano }}" alt="Imagem do Plano" class="card__image">
+                  {% endif %}
+                {% endfor %}
                 <figcaption class="card__caption">
-                  <h2 class="card__title">{{ plano.nome_do_plano }}</h2>
-                  <p class="card__snippet">{{ plano.desc_plano }}</p>
+                  <h2 class="card__title">{{ plano.title }}</h2>
+                  <p class="card__snippet">{{ plano.desc }}</p>
                   <a href="" class="card__button">Veja Mais</a>
                 </figcaption>
               </figure>
@@ -20,6 +24,6 @@
         </div>
       </div>
     </div>
-
-
-
+    {% endfor %}
+  </div>
+</div>
