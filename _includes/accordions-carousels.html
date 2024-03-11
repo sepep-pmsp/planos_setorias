@@ -8,11 +8,11 @@
             <div class="card_fixo">
               <figure class="card__thumb">
 
-                {% for dado in site.data.dados_planos %}
-                  {% if dado.nome_do_plano == plano.title %}
-                    <img src="{{ dado.logo_plano }}" alt="Imagem do Plano" class="card__image">
+
+                  {% if plano.logo_do_plano %}
+                  <img src="{{ plano.logo_plano }}" alt="Imagem do Plano" class="card__image">
                   {% endif %}
-                {% endfor %}
+
                 <figcaption class="card__caption">
                   <h2 class="card__title">{{ plano.title }}</h2>
                   <p class="card__snippet">{{ plano.desc }}</p>
@@ -27,3 +27,15 @@
     {% endfor %}
   </div>
 </div>
+
+<div class="controls">	
+  <div class="first"><i class="fa-solid fa-angles-left"></i></div>	
+  <div class="prev"><i class="fa-solid fa-arrow-left"></i></div>	
+  <div class="numbers">	
+      <div>1</div>	
+  </div>	
+  <div class="next"><i class="fa-solid fa-arrow-right"></i></div>	
+  <div class="last"><i class="fa-solid fa-angles-right"></i></div>	
+</div>	
+</div>	
+<script src="../assets/js/navegacao.js"></script>	
