@@ -10,5 +10,5 @@ permalink:  /encerrados/
 </div>
 
 <div>
-{% include _carousels.html %}
+{% include _carousels_encerrados.html %}
 </div>

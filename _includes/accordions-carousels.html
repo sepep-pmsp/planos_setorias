@@ -9,8 +9,8 @@
               <figure class="card__thumb">
 
 
-                  {% if plano.logo_do_plano %}
-                  <img src="{{ plano.logo_plano }}" alt="Imagem do Plano" class="card__image">
+                  {% if plano.logo_plano != null  and plano.logo_plano != ""  %}
+                    <img src="{{ plano.logo_plano }}" alt="Imagem do Plano" class="card__image">
                   {% endif %}
 
                 <figcaption class="card__caption">
@@ -28,14 +28,5 @@
   </div>
 </div>
 
-<div class="controls">	
-  <div class="first"><i class="fa-solid fa-angles-left"></i></div>	
-  <div class="prev"><i class="fa-solid fa-arrow-left"></i></div>	
-  <div class="numbers">	
-      <div>1</div>	
-  </div>	
-  <div class="next"><i class="fa-solid fa-arrow-right"></i></div>	
-  <div class="last"><i class="fa-solid fa-angles-right"></i></div>	
-</div>	
-</div>	
-<script src="../assets/js/navegacao.js"></script>	
+
+

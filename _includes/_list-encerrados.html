@@ -5,13 +5,13 @@
      <hr>
    </div>
    <div class="items-body">
-    {% for plano in site.data.planos %}
+    {% for plano in site.data.planos limit:2 %}
 
-      {% if plano.Status == Encerrado %}
+      {% if plano.status == "Encerrado" %}
 
 
      <div class="items-body-content">
-      <a href=""><span>plano.title</span></a>
+      <a href=""><span>{{ plano.title }}</span></a>
        <i class="fa fa-angle-right"></i>
 
 
