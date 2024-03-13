@@ -4,4 +4,5 @@ title:  "Planos Elaborados"
 categories: Projetos
 permalink:  /elaborados/
 ---
-{% include accordions-carousels.html %}
+
+<div>{% include accordions-carousels.html %}</div>
