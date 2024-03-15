@@ -1,0 +1,20 @@
+<div class="plano_content">
+
+    {% if page.title %}
+    <h1>{{ page.title }}</h1>
+    {% endif %}
+    {% if page.plano_datet %}
+    <h2>{{ page.plano_date }}</h2>
+    {% endif %}
+    {% if page.plano_gestao %}
+    <h3>{{ page.plano_gestao }}</h3>
+    {% endif %}
+    {% if page.plano_administracao %}
+    <h3>{{ page.plano_administracao }}</h3>
+    {% endif %}
+    {% if page.plano_secretaria %}
+    <h3>{{ page.plano_secretaria }}</h3>
+    {% endif %}
+
+    <p>{{ page.plano_resume }}</p>
+</div>
