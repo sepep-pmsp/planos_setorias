@@ -18,7 +18,7 @@ def create_frontmatter(row):
     frontmatter += "<div>\n{% include _page_plano.html %}\n</div>\n"
     return frontmatter
 
-with open('planos.csv', mode='r', encoding='utf-8-sig') as csv_file:
+with open('../../_data/planos.csv', mode='r', encoding='utf-8-sig') as csv_file:
     csv_reader = csv.DictReader(csv_file)
     i = 0
     for row in csv_reader:
