@@ -1,0 +1,25 @@
+<div>
+  <div class="void" id="void">
+    <div class="crop">
+    <ul class="messy-list" id="card-list" style="--count: 6;">
+      
+     {% for plano in site.data.planos limit:10 %}
+ 
+       {% if plano.status == "Elaborado" %}
+ 
+          <li class="list-carou"><div class="card"><a class="hiper" href=""><span class="model-name">{{ plano.title }}</span><span></span></a></div></li>
+ 
+ 
+        {% endif %}
+ 
+ 
+     {% endfor %}
+    </ul>
+    <div class="last-circle"></div>
+    <div class="second-circle"></div>
+    </div>
+    <div class="mask"></div>
+    <div class="center-circle"></div>
+  <div>
+  </div>
+  </div>

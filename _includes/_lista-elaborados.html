@@ -1,30 +1,25 @@
 <div class="bloco-lista-encerrados">
- <div class="items">
-   <div class="items-head">
-     <p class="title-list-file">Planos</p>
-     <hr>
-   </div>
-   <div class="items-body">
-     <div class="items-body-content">
-      <a href=""><span>2º Plano de Ação em Governo Aberto</span></a>
-       <i class="fa fa-angle-right"></i>
-     </div>
-     <div class="items-body-content">
-      <a href=""><span>Plano de Assistência Social da Cidade de São Paulo</span></a>
-       <i class="fa fa-angle-right"></i>
-     </div>
-     <div class="items-body-content">
-      <a href=""><span>Plano Municipal de Enfrentamento à Violência, Abuso e Exploração Sexual contra Crianças e Adolescentes</span></a>
-       <i class="fa fa-angle-right"></i>
-     </div>
-     <div class="items-body-content">
-      <a href=""><span>Plano Municipal de Segurança Alimentar e Nutricional</span></a>
-       <i class="fa fa-angle-right"></i>
-     </div>
-     <div class="items-body-content">
-      <a href=""><span>Plano Municipal para Erradicação do Trabalho Escravo</span></a>
-      <i class="fa fa-angle-right"></i>
+  <div class="items">
+    <div class="items-head">
+      <p class="title-list-file">Planos</p>
+      <hr>
     </div>
-   </div>
+    <div class="items-body">
+     {% for plano in site.data.planos limit:3 %}
+ 
+       {% if plano.status == "Elaborado" %}
+ 
+ 
+      <div class="items-body-content">
+       <a href=""><span>{{ plano.title }}</span></a>
+        <i class="fa fa-angle-right"></i>
+ 
+ 
+        {% endif %}
+ 
+ 
+     {% endfor %}
+     </div>
+    </div>
+  </div>
  </div>
-</div>
