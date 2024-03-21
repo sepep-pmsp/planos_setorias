@@ -33,6 +33,8 @@ plugins:
   - jekyll-feed
   
 remote_theme: vfvong/jekyll-theme-quartz
+
+embedd: https://app.powerbi.com/view?r=eyJrIjoiMjM5NTVmNDYtZWUzMS00NDc5LWE0ZWItMjc5OTQzNzYwNGJkIiwidCI6ImI5YjgwMjQ2LWYzMzgtNGRlZi04YzQ2LWY1MDhiZjY3YzU1ZSJ9
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
