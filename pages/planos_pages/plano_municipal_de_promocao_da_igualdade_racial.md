@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Promoção da Igualdade Racial'
-permalink: /elaborado/plano_municipal_de_promocao_da_igualdade_racial
+permalink: /elaborado/plano_municipal_de_promocao_da_igualdade_racial/
 plano_date_inicio: '11/23/2018'
 plano_date_fim: ''
 plano_gestao: ''

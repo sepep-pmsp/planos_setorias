@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Enfrentamento à Violência Abuso e Exploração Sexual contra Crianças e Adolescentes da Cidade de São Paulo'
-permalink: /encerrado/plano_municipal_de_enfrentamento_a_violencia_abuso_e_exploracao_sexual_contra_criancas_e_adolescentes_da_cidade_de_sao_paulo
+permalink: /encerrado/plano_municipal_de_enfrentamento_a_violencia_abuso_e_exploracao_sexual_contra_criancas_e_adolescentes_da_cidade_de_sao_paulo/
 plano_date_inicio: '5/17/2007'
 plano_date_fim: ''
 plano_gestao: 'Gilberto Kassab'

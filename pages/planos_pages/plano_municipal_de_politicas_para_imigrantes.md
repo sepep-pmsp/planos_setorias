@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Políticas para Imigrantes'
-permalink: /elaborado/plano_municipal_de_politicas_para_imigrantes
+permalink: /elaborado/plano_municipal_de_politicas_para_imigrantes/
 plano_date_inicio: '12/8/2020'
 plano_date_fim: '12/31/2024'
 plano_gestao: 'Bruno Covas'

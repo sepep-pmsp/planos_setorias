@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Cultura'
-permalink: /elaborado/plano_municipal_de_cultura
+permalink: /elaborado/plano_municipal_de_cultura/
 plano_date_inicio: '11/29/2016'
 plano_date_fim: '12/31/2025'
 plano_gestao: 'Fernando Haddad'

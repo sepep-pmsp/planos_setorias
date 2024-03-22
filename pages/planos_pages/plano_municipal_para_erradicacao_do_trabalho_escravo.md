@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal para Erradicação do Trabalho Escravo'
-permalink: /encerrado/plano_municipal_para_erradicacao_do_trabalho_escravo
+permalink: /encerrado/plano_municipal_para_erradicacao_do_trabalho_escravo/
 plano_date_inicio: '1/1/2015'
 plano_date_fim: '12/31/2017'
 plano_gestao: ''

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Conservação e Recuperação da Mata Atlântica'
-permalink: /elaborado/plano_municipal_de_conservacao_e_recuperacao_da_mata_atlantica
+permalink: /elaborado/plano_municipal_de_conservacao_e_recuperacao_da_mata_atlantica/
 plano_date_inicio: '1/1/2016'
 plano_date_fim: '12/31/2030'
 plano_gestao: 'João Doria'

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: '1º Plano de Ação em Governo Aberto'
-permalink: /encerrado/1o_plano_de_acao_em_governo_aberto
+permalink: /encerrado/1o_plano_de_acao_em_governo_aberto/
 plano_date_inicio: '1/1/2016'
 plano_date_fim: '12/31/2017'
 plano_gestao: ''

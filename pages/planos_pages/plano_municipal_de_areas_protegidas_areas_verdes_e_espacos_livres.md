@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Áreas Protegidas Áreas Verdes e Espaços Livres'
-permalink: /elaborado/plano_municipal_de_areas_protegidas_areas_verdes_e_espacos_livres
+permalink: /elaborado/plano_municipal_de_areas_protegidas_areas_verdes_e_espacos_livres/
 plano_date_inicio: '1/1/2022'
 plano_date_fim: '12/31/2032'
 plano_gestao: 'Ricardo Nunes'

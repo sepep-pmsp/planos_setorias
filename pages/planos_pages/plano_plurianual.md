@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Plurianual'
-permalink: /elaborado/plano_plurianual
+permalink: /elaborado/plano_plurianual/
 plano_date_inicio: '1/1/2022'
 plano_date_fim: '12/31/2025'
 plano_gestao: 'Bruno Covas'

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Decenal de Atendimento Socioeducativo'
-permalink: /elaborado/plano_decenal_de_atendimento_socioeducativo
+permalink: /elaborado/plano_decenal_de_atendimento_socioeducativo/
 plano_date_inicio: '1/1/2015'
 plano_date_fim: '12/31/2025'
 plano_gestao: 'Fernando Haddad'

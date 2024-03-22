@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal pela Primeira Infância'
-permalink: /elaborado/plano_municipal_pela_primeira_infancia
+permalink: /elaborado/plano_municipal_pela_primeira_infancia/
 plano_date_inicio: '1/1/2017'
 plano_date_fim: '12/31/2030'
 plano_gestao: 'Bruno Covas'

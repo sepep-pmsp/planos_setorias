@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Decenal de Assistência Social da Cidade de São Paulo'
-permalink: /elaborado/plano_decenal_de_assistencia_social_da_cidade_de_sao_paulo
+permalink: /elaborado/plano_decenal_de_assistencia_social_da_cidade_de_sao_paulo/
 plano_date_inicio: '1/1/2016'
 plano_date_fim: '12/31/2026'
 plano_gestao: 'Fernando Haddad'

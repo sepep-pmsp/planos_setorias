@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano de Desenvolvimento do Turismo Sustentável(Polo de Ecoturismo de São Paulo)'
-permalink: /elaborado/plano_de_desenvolvimento_do_turismo_sustentavel(polo_de_ecoturismo_de_sao_paulo)
+permalink: /elaborado/plano_de_desenvolvimento_do_turismo_sustentavel(polo_de_ecoturismo_de_sao_paulo)/
 plano_date_inicio: '1/1/2017'
 plano_date_fim: ''
 plano_gestao: 'João Doria'

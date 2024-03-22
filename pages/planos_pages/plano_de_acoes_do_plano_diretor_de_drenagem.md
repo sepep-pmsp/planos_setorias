@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano de Ações do Plano Diretor de Drenagem'
-permalink: /elaborado/plano_de_acoes_do_plano_diretor_de_drenagem
+permalink: /elaborado/plano_de_acoes_do_plano_diretor_de_drenagem/
 plano_date_inicio: '1/1/2022'
 plano_date_fim: '1/1/2027'
 plano_gestao: ''

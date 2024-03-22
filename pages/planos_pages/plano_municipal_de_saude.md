@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Saúde'
-permalink: /elaborado/plano_municipal_de_saude
+permalink: /elaborado/plano_municipal_de_saude/
 plano_date_inicio: '2/1/2022'
 plano_date_fim: '12/31/2025'
 plano_gestao: 'Ricardo Nunes'

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Educação em Direitos Humanos'
-permalink: /elaborado/plano_municipal_de_educacao_em_direitos_humanos
+permalink: /elaborado/plano_municipal_de_educacao_em_direitos_humanos/
 plano_date_inicio: '12/6/2016'
 plano_date_fim: ''
 plano_gestao: 'Fernando Haddad'

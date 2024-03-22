@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Habitação'
-permalink: /elaborado/plano_municipal_de_habitacao
+permalink: /elaborado/plano_municipal_de_habitacao/
 plano_date_inicio: '12/31/2015'
 plano_date_fim: '12/31/2031'
 plano_gestao: ''

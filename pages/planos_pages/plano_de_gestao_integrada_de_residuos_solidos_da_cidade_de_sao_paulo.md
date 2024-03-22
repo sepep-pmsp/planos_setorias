@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano de Gestão Integrada de Resíduos Sólidos da Cidade de São Paulo'
-permalink: /elaborado/plano_de_gestao_integrada_de_residuos_solidos_da_cidade_de_sao_paulo
+permalink: /elaborado/plano_de_gestao_integrada_de_residuos_solidos_da_cidade_de_sao_paulo/
 plano_date_inicio: '4/2/2014'
 plano_date_fim: '12/31/2034'
 plano_gestao: ''

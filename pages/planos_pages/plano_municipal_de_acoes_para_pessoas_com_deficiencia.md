@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Ações para Pessoas com Deficiência'
-permalink: /elaborado/plano_municipal_de_acoes_para_pessoas_com_deficiencia
+permalink: /elaborado/plano_municipal_de_acoes_para_pessoas_com_deficiencia/
 plano_date_inicio: '1/1/2021'
 plano_date_fim: '12/31/2024'
 plano_gestao: ''

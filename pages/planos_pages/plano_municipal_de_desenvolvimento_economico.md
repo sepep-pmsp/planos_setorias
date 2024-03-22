@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Desenvolvimento Econômico'
-permalink: /elaborado/plano_municipal_de_desenvolvimento_economico
+permalink: /elaborado/plano_municipal_de_desenvolvimento_economico/
 plano_date_inicio: '1/26/2022'
 plano_date_fim: '12/31/2032'
 plano_gestao: 'Ricardo Nunes'
