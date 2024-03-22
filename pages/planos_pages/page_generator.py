@@ -7,7 +7,7 @@ def create_frontmatter(row):
     frontmatter = "---\n"
     frontmatter += "layout: page\n"
     frontmatter += f"title: '{row.get('title', '')}'\n"
-    frontmatter += f"permalink: /{row.get('status', '').lower()}/{unidecode(row.get('title', '')).replace(' ', '_').lower()}\n"
+    frontmatter += f"permalink: /{row.get('status', '').lower()}/{unidecode(row.get('title', '')).replace(' ', '_').lower()}/\n"
     frontmatter += f"plano_date_inicio: '{row.get('Início', '')}'\n"
     frontmatter += f"plano_date_fim: '{row.get('Fim', 'atualmente')}'\n"
     frontmatter += f"plano_gestao: '{row.get('Prefeito', '')}'\n"
