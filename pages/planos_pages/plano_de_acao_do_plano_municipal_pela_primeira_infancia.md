@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano de Ação do Plano Municipal pela Primeira Infância'
-permalink: /elaborado/plano_de_acao_do_plano_municipal_pela_primeira_infancia
+permalink: /elaborado/plano_de_acao_do_plano_municipal_pela_primeira_infancia/
 plano_date_inicio: '1/1/2021'
 plano_date_fim: '12/31/2024'
 plano_gestao: 'Ricardo Nunes'

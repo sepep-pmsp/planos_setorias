@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Conservação e Recuperação de Áreas Prestadoras de Serviços Ambientais'
-permalink: /elaborado/plano_municipal_de_conservacao_e_recuperacao_de_areas_prestadoras_de_servicos_ambientais
+permalink: /elaborado/plano_municipal_de_conservacao_e_recuperacao_de_areas_prestadoras_de_servicos_ambientais/
 plano_date_inicio: '1/1/2020'
 plano_date_fim: '12/31/2029'
 plano_gestao: 'Bruno Covas'

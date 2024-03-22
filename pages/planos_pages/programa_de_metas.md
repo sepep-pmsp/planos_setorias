@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Programa de Metas'
-permalink: /elaborado/programa_de_metas
+permalink: /elaborado/programa_de_metas/
 plano_date_inicio: '4/1/2021'
 plano_date_fim: '12/31/2024'
 plano_gestao: 'Ricardo Nunes'

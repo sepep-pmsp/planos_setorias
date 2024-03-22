@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano de Segurança Viária do Município'
-permalink: /elaborado/plano_de_seguranca_viaria_do_municipio
+permalink: /elaborado/plano_de_seguranca_viaria_do_municipio/
 plano_date_inicio: '12/31/2018'
 plano_date_fim: '12/31/2028'
 plano_gestao: 'Bruno Covas'

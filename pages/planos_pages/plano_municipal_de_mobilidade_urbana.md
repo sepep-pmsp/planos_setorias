@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Mobilidade Urbana'
-permalink: /elaborado/plano_municipal_de_mobilidade_urbana
+permalink: /elaborado/plano_municipal_de_mobilidade_urbana/
 plano_date_inicio: '2/24/2016'
 plano_date_fim: '12/31/2031'
 plano_gestao: ''

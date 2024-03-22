@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Segurança Alimentar e Nutricional'
-permalink: /encerrado/plano_municipal_de_seguranca_alimentar_e_nutricional
+permalink: /encerrado/plano_municipal_de_seguranca_alimentar_e_nutricional/
 plano_date_inicio: '1/1/2016'
 plano_date_fim: '12/31/2020'
 plano_gestao: 'Fernando Haddad'

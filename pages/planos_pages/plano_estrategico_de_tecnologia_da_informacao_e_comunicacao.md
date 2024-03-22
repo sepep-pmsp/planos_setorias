@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Estratégico de Tecnologia da Informação e Comunicação'
-permalink: /elaborado/plano_estrategico_de_tecnologia_da_informacao_e_comunicacao
+permalink: /elaborado/plano_estrategico_de_tecnologia_da_informacao_e_comunicacao/
 plano_date_inicio: '12/31/2021'
 plano_date_fim: '1/1/2024'
 plano_gestao: 'Ricardo Nunes'

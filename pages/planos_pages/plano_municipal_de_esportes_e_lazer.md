@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Esportes e Lazer'
-permalink: /elaborado/plano_municipal_de_esportes_e_lazer
+permalink: /elaborado/plano_municipal_de_esportes_e_lazer/
 plano_date_inicio: '6/18/2018'
 plano_date_fim: '12/31/2025'
 plano_gestao: ''

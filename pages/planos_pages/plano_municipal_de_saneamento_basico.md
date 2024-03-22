@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Saneamento Básico'
-permalink: /elaborado/plano_municipal_de_saneamento_basico
+permalink: /elaborado/plano_municipal_de_saneamento_basico/
 plano_date_inicio: '1/1/2019'
 plano_date_fim: '12/31/2039'
 plano_gestao: ''

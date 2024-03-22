@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano de Ação Climática de São Paulo'
-permalink: /elaborado/plano_de_acao_climatica_de_sao_paulo
+permalink: /elaborado/plano_de_acao_climatica_de_sao_paulo/
 plano_date_inicio: '6/3/2021'
 plano_date_fim: '12/31/2025'
 plano_gestao: 'Bruno Covas'

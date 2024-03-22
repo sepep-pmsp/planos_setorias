@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Políticas para Mulheres'
-permalink: /encerrado/plano_municipal_de_politicas_para_mulheres
+permalink: /encerrado/plano_municipal_de_politicas_para_mulheres/
 plano_date_inicio: '1/1/2017'
 plano_date_fim: '12/31/2020'
 plano_gestao: ''

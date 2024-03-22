@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano de Ação para Implementação da Agenda 2030'
-permalink: /elaborado/plano_de_acao_para_implementacao_da_agenda_2030
+permalink: /elaborado/plano_de_acao_para_implementacao_da_agenda_2030/
 plano_date_inicio: '1/1/2021'
 plano_date_fim: '12/31/2024'
 plano_gestao: 'Bruno Covas'

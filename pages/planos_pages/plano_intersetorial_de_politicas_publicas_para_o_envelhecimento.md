@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Intersetorial de Políticas Públicas para o Envelhecimento'
-permalink: /elaborado/plano_intersetorial_de_politicas_publicas_para_o_envelhecimento
+permalink: /elaborado/plano_intersetorial_de_politicas_publicas_para_o_envelhecimento/
 plano_date_inicio: '1/1/2021'
 plano_date_fim: '12/31/2024'
 plano_gestao: 'Bruno Covas'

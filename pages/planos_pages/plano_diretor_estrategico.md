@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Diretor Estratégico'
-permalink: /elaborado/plano_diretor_estrategico
+permalink: /elaborado/plano_diretor_estrategico/
 plano_date_inicio: '1/1/2014'
 plano_date_fim: '12/31/2029'
 plano_gestao: 'Fernando Haddad'

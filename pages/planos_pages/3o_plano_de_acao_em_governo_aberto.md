@@ -1,7 +1,7 @@
 ---
 layout: page
 title: '3º Plano de Ação em Governo Aberto'
-permalink: /elaborado/3o_plano_de_acao_em_governo_aberto
+permalink: /elaborado/3o_plano_de_acao_em_governo_aberto/
 plano_date_inicio: '1/1/2021'
 plano_date_fim: '12/31/2024'
 plano_gestao: 'Ricardo Nunes'

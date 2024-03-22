@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Agenda Municipal 2030'
-permalink: /elaborado/agenda_municipal_2030
+permalink: /elaborado/agenda_municipal_2030/
 plano_date_inicio: '5/31/2021'
 plano_date_fim: '12/31/2030'
 plano_gestao: ''

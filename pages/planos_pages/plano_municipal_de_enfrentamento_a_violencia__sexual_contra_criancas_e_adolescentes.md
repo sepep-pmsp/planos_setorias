@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Enfrentamento a Violência  Sexual contra Crianças e Adolescentes'
-permalink: /elaborado/plano_municipal_de_enfrentamento_a_violencia__sexual_contra_criancas_e_adolescentes
+permalink: /elaborado/plano_municipal_de_enfrentamento_a_violencia__sexual_contra_criancas_e_adolescentes/
 plano_date_inicio: '1/1/2023'
 plano_date_fim: '12/31/2033'
 plano_gestao: 'Ricardo Nunes'

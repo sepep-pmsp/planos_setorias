@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Cicloviário do Município de São Paulo'
-permalink: /elaborado/plano_cicloviario_do_municipio_de_sao_paulo
+permalink: /elaborado/plano_cicloviario_do_municipio_de_sao_paulo/
 plano_date_inicio: '7/1/2019'
 plano_date_fim: '12/31/2028'
 plano_gestao: ''

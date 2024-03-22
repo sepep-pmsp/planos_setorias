@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal do Livro, Leitura, Literatura e Biblioteca'
-permalink: /elaborado/plano_municipal_do_livro,_leitura,_literatura_e_biblioteca
+permalink: /elaborado/plano_municipal_do_livro,_leitura,_literatura_e_biblioteca/
 plano_date_inicio: '1/1/2016'
 plano_date_fim: '12/31/2026'
 plano_gestao: ''

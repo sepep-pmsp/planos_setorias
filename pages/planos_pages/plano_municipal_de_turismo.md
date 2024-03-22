@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Turismo'
-permalink: /elaborado/plano_municipal_de_turismo
+permalink: /elaborado/plano_municipal_de_turismo/
 plano_date_inicio: '12/31/2018'
 plano_date_fim: '12/31/2029'
 plano_gestao: 'Bruno Covas'

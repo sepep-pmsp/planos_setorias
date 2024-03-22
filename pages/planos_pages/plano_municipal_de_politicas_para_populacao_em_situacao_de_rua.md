@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Políticas para População em Situação de Rua'
-permalink: /elaborado/plano_municipal_de_politicas_para_populacao_em_situacao_de_rua
+permalink: /elaborado/plano_municipal_de_politicas_para_populacao_em_situacao_de_rua/
 plano_date_inicio: '12/26/2016'
 plano_date_fim: ''
 plano_gestao: ''

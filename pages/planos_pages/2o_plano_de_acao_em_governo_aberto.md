@@ -1,7 +1,7 @@
 ---
 layout: page
 title: '2º Plano de Ação em Governo Aberto'
-permalink: /encerrado/2o_plano_de_acao_em_governo_aberto
+permalink: /encerrado/2o_plano_de_acao_em_governo_aberto/
 plano_date_inicio: '1/1/2018'
 plano_date_fim: '12/31/2020'
 plano_gestao: 'Bruno Covas'

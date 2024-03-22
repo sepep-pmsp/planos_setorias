@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Agroecologia e Desenvolvimento Rural Sustentável e Solidário'
-permalink: /elaborado/plano_municipal_de_agroecologia_e_desenvolvimento_rural_sustentavel_e_solidario
+permalink: /elaborado/plano_municipal_de_agroecologia_e_desenvolvimento_rural_sustentavel_e_solidario/
 plano_date_inicio: '1/1/2022'
 plano_date_fim: '12/31/2030'
 plano_gestao: 'Ricardo Nunes'

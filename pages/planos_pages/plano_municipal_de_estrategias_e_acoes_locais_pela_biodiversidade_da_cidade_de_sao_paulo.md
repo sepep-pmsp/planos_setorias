@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Estratégias e Ações Locais pela Biodiversidade da Cidade de São Paulo'
-permalink: /elaborado/plano_municipal_de_estrategias_e_acoes_locais_pela_biodiversidade_da_cidade_de_sao_paulo
+permalink: /elaborado/plano_municipal_de_estrategias_e_acoes_locais_pela_biodiversidade_da_cidade_de_sao_paulo/
 plano_date_inicio: '7/1/2011'
 plano_date_fim: ''
 plano_gestao: 'Gilberto Kassab'

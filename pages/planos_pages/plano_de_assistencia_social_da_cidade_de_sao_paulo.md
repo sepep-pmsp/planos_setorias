@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano de Assistência Social da Cidade de São Paulo'
-permalink: /encerrado/plano_de_assistencia_social_da_cidade_de_sao_paulo
+permalink: /encerrado/plano_de_assistencia_social_da_cidade_de_sao_paulo/
 plano_date_inicio: '1/1/2018'
 plano_date_fim: '12/31/2021'
 plano_gestao: 'Bruno Covas'

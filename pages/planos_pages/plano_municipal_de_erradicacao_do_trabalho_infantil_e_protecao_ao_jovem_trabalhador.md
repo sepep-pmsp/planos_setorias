@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Erradicação do Trabalho Infantil e Proteção ao Jovem Trabalhador'
-permalink: /elaborado/plano_municipal_de_erradicacao_do_trabalho_infantil_e_protecao_ao_jovem_trabalhador
+permalink: /elaborado/plano_municipal_de_erradicacao_do_trabalho_infantil_e_protecao_ao_jovem_trabalhador/
 plano_date_inicio: '10/31/2016'
 plano_date_fim: ''
 plano_gestao: ''

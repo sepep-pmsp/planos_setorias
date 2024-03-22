@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 'Plano Municipal de Educação'
-permalink: /elaborado/plano_municipal_de_educacao
+permalink: /elaborado/plano_municipal_de_educacao/
 plano_date_inicio: '9/17/2015'
 plano_date_fim: '12/31/2025'
 plano_gestao: 'Fernando Haddad'
