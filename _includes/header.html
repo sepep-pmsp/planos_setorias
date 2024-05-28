@@ -8,11 +8,21 @@
       <div class="inner">
         <div class="site-header-content">
           <h2 class="site-title">
-            <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+            <img class="logo-spplanos" src="{{ '../assets/images/logo-spplanos.png' | relative_url }}" alt="">
+            <img src="{{ '../assets/images/Logo-prefeitura.png' | relative_url }}" alt="LOGOTIPO PREFEITURA HORIZONTAL FUNDO ESCURO">
           </h2>
           {% if site.tagline %}
             <h5 class="site-tagline">{{ site.tagline }}</h5>
           {% endif %}
+          
+          <div class="search-bar">
+            <div class="search">
+              <input id='search-btn' type='checkbox'/>
+              <label for='search-btn'>Show search bar</label>
+              <input id='search-bar' type='text' placeholder='Pesquisar'/>
+            </div>
+            </div>
+          </div>
         </div>
         {% if site.data.navigation %}
           <nav class="nav">
