@@ -8,7 +8,7 @@ $screen-laptop:  768px;
 $screen-desktop: 1024px;
 
 :root {
-  --spacing: 1rem;
+  --spacing: 0rem;
 
   --body-bg:          var(--oc-white);
   --body-fg:          var(--oc-gray-1);
@@ -47,6 +47,19 @@ $screen-desktop: 1024px;
     --post-card-shadow:  0 0 1px rgba(181, 205, 228, 0.10), 0 3px 16px rgba(181, 205, 228, 0.07);
   }
 }
+
+$nav-bar-color: #1e83ff;
+
+$btn-d: 3em;
+$txt-w: 4*$btn-d;
+$txt-h: .65*$btn-d;
+$txt-c: #ffeacc;
+$mag-d: .5*$txt-h;
+$mag-f: .125;
+$mag-w: $mag-f*$mag-d;
+$mag-c: #000;
+$t: .65s;
+$color-search-btn: #e27c00;
 
 @media screen and (min-width: $screen-laptop) {
   :root {

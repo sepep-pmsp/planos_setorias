@@ -1,41 +1,49 @@
-{% assign posts = site.posts %}
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% endif %}
-{% for post in posts %}
-  <article class="post-card">
-    {% if post.image %}
-      <a class="post-card-image-link" href="{{ post.url | relative_url }}">
-        <div class="post-card-image" style="background-image: url({{  post.image | relative_url }})"></div>
-      </a>
-    {% endif %}
-    <div class="post-card-content {% unless post.image %}no-cover{% endunless %}">
-      <a class="post-card-content-link" >
-        <header class="post-card-header">
-          {% if post.categories.size > 0 %}
-            {% for category in post.categories %}
-              {% if forloop.index == post.categories.size %}
-                <span class="post-card-categories"></span>
-              {% else %}
-                <span class="post-card-categories"></span>
-
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-
-          <h2 class="post-card-title">SPPlanos</h2>
-        </header>
-        <section class="post-card-excerpt">
-          <p>Bem-vindo ao site dos Planos Setoriais da Prefeitura de São Paulo. Aqui você encontra informações sobre os projetos que estão sendo desenvolvidos, planejados ou encerrados em cada uma das 32 subprefeituras da cidade. </p>
-          <p>Você pode consultar os objetivos, as diretrizes, as ações e os indicadores de cada plano, além de acompanhar o andamento e os resultados das intervenções urbanas.</p>
-          <p> Você também pode participar do planejamento de uma nova São Paulo, enviando sugestões, críticas ou elogios através dos canais de comunicação disponíveis no site.</p>
-        </section>
-      </a>
-      <footer class="post-card-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">
-          <i class="fa-solid fa-calendar-days"></i> {{ post.date | date_to_string }}
-        </time>
-      </footer>
+<div class="masonry">
+  <div class="flex-1">
+    <div class="grid">
+      <div class="imagem-espaco">
+        <img class="img-00" src="https://source.unsplash.com/1000x1500/?business-work">
+      </div>
+      <div class="grid__body">
+        <div class="relative">
+          <a class="grid__link" target="_blank" href="/" ></a>
+          <h1 class="grid__title">4ª edição do Pop Rua Jud Sampa segue até sexta-feira (17), na Praça da Sé</h1>
+          <p class="grid__author">Promovido pela Prefeitura de São Paulo juntamente a mais de 40 entidades e coordenado pelo Tribunal Regional Federal da 3ª Região e pelo Tribunal de Justiça de São Paulo, o mutirão é realizado na Praça da Sé, das 9h às 15h e segue até a próxima sexta-feira, dia 17.</p>
+        </div>
+        <div class="mt-auto" >
+          <span class="grid__tag">15/05/2024</span>
+        </div>
+      </div>
     </div>
-  </article>
-{% endfor %}
+  </div>
+  <div class="flex-2">
+    <div class="grid">
+      <img class="img-01" src="https://source.unsplash.com/1080x777/?work">
+      <div class="grid__body">
+        <div class="relative">
+          <a class="grid__link" target="_blank" href="https://www.capital.sp.gov.br/web/prefeitura-de-sao-paulo/w/estudantes-da-rede-municipal-se-destacam-nos-jogos-escolares-do-estado-de-s%C3%A3o-paulo" ></a>
+          <h1 class="grid__title">Estudantes da Rede Municipal se destacam nos Jogos Escolares do Estado de São Paulo</h1>
+          <p class="grid__author">As escolas da Rede Municipal de Ensino da capital paulista estão participando dos Jogos Escolares do Estado de São Paulo em diversas modalidades como atletismo e voleibol. As unidades desenvolvem projetos com esporte e estimulam o potencial dos estudantes. A iniciativa está alinhada à educação integral estimulando a prática de atividades físicas, além da oportunidade de desenvolver valores como trabalho em equipe, fair play, diálogo e muito mais. </p>
+        </div>
+        <div class="mt-auto" >
+          <span class="grid__tag">04/06/2024</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-3">
+    <div class="grid">
+      <img class="img-02" src="https://participemais.prefeitura.sp.gov.br/assets/home_image_f1-a3b6ea6ac8e7e8362dbd8a30db5e31c4da6b37bb47162bddd560af63ef1ac153.gif">
+      <div class="grid__body">
+        <div class="relative">
+          <a class="grid__link" target="_blank" href="https://participemais.prefeitura.sp.gov.br/" ></a>
+          <h1 class="grid__title"></h1>
+          <p class="grid__author"></p>
+        </div>
+        <div class="mt-auto" >
+          <span class="grid__tag">Secretaria de Governo Municipal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
