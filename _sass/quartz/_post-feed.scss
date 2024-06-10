@@ -12,69 +12,195 @@
     columns: 2;
   }
   //@media (max-width: 768px) {columns: 1;}
-  .flex-1{
-    column-gap: 16px;
-  }
-  
+}
 
-  .grid {
-    display: inline-block;
-    margin-bottom: 16px;
+@mixin circle($i) {
+  border-radius: 100%;
+  height: $i;
+  width: $i;
+}
+
+$bgBlue: #001d38;
+$cartaoBlue: #0a2640;
+
+.conteudoCarousel00{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel01{
+  margin: 0;
+  padding: 0;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.embrulho {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 45em;
+  
+  & > .interna {
+    display: flex;
+    grid-gap: 2em;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.cartao {
+  border-radius: 0.5em;
+  width: 783px;
+  height: 431px;
+
+  & > img {
+    border-radius: 0.5em;
+    display: block;
+    width: 43.5em;
+  }
+
+  & > .content {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.747) 80%, rgba(255,255,255,0) 100%);
+    color: black;
+    padding: 1em;
     position: relative;
-    &:before {
-      border-radius: 5px;
-      content:'';
-      position:absolute;
-      top:0;
-      right:0;
-      bottom:0;
-      left:0;
-      background-color:rgba(0, 0, 0, 0);
+    bottom: 5.313rem;
+
+    & > h2,
+    & > h3 {
+      margin: 0.35em 0;
     }
-    img {
-      width: 100%;
-      border-radius: 5px;
-    }
-    &__title {
-      font-size: 28px;
-      font-weight:bold;
-      margin: 0px 0px 10px 0px;
-      background-color: #00000014;
-      
-    }
-    &__author {
-      font-size: 14px;
-      font-weight:300;
-      background-color: #00000014;
-      
-    }
-    &__link {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-    }
-    &__body {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      padding: 30px 30px;
-      color: #fff;
-      display: flex;
-      flex-direction: column
-    }
-    &__tag {
-      background-color:rgba(255,255,255,.8);
-      color: #333;
-      border-radius:5px;
-      padding: 5px 15px;
-      margin-bottom: 5px;
+
+    & > h2 {
+      color: #000000;
+      font-size: 2rem;
+      line-height: 1;
     }
   }
 }
-.mt-auto {
-  margin-top:auto;
+
+.map {
+  margin-top: -8em;
+  & > button {
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    background-color: $bgBlue;
+    border: none;
+    border-radius: 100%;
+    height: 0.75rem;
+    width: 0.75rem;
+
+    &.active {
+      &:after {
+        background: $bgBlue;
+        content: "";
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+      }
+    }
+  }
+}
+
+.carousel02{
+  margin: 0;
+  padding: 0;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centro2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.embrulho2 {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 28em;
+  
+  & > .interna2 {
+    display: flex;
+    grid-gap: 5em;
+    transition: all 1s ease-in-out;
+  }
+}
+
+.cartao2 {
+  border-radius: 0.5em;
+  width: 414px;
+  height: 432px;
+
+  & > img {
+    border-radius: 0.5em;
+    display: block;
+    width: 24.5em;
+    height: 21rem;
+  }
+
+  & > .contentr {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.747) 80%, rgba(255,255,255,0) 100%);
+    color: black;
+    padding: 1em;
+    position: relative;
+    bottom: 5.313rem;
+    width: 26.813rem;
+
+    & > h2,
+    & > h3 {
+      margin: 0.35em 0;
+    }
+
+    & > h2 {
+      color: #000000;
+      font-size: 2rem;
+      line-height: 1;
+    }
+  }
+}
+
+.mapa {
+  margin-top: -7em;
+  & > button {
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    background-color: $bgBlue;
+    border: none;
+    border-radius: 100%;
+    height: 0.75rem;
+    width: 0.75rem;
+
+    &.active {
+      &:after {
+        background: $bgBlue;
+        content: "";
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+      }
+    }
+  }
 }

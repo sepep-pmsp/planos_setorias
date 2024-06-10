@@ -14,15 +14,6 @@
           {% if site.tagline %}
             <h5 class="site-tagline">{{ site.tagline }}</h5>
           {% endif %}
-          
-          <div class="search-bar">
-            <div class="search">
-              <input id='search-btn' type='checkbox'/>
-              <label for='search-btn'>Show search bar</label>
-              <input id='search-bar' type='text' placeholder='Pesquisar'/>
-            </div>
-            </div>
-          </div>
         </div>
         <div class="navigation">
           {% if site.data.navigation %}
@@ -43,6 +34,10 @@
                   </ul>
                 {% endif %}
               {% endfor %}
+              <div class="search-box">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+                <input type="text" class="input-search" placeholder="Pesquisar">
+              </div>
             </nav>
           {% endif %}
       </div>

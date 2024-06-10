@@ -1,20 +1,14 @@
 - title: Home
   url: /
-- title: Noticias
-  url: /noticias/
+
 - title: Planos
-  dropdown:
-  - title: Planos Elaborados
-    url: /elaborados/
-  - title: Planos Encerrados
-    url: /encerrados/
+  url: /planos/
 - title: Dados
   dropdown:
   - title: Painel de Dados
     url: /painel/
   - title: Dados Abertos
     url: https://dados.gov.br/home
-- title: "Sobre"
-  url: /sobre/
+
 - title: Participe +
   url: https://participemais.prefeitura.sp.gov.br/
