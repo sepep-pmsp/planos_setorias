@@ -1,0 +1,36 @@
+<div class="planosGerais">
+  <div class="filt-title-onder">
+    <div class="title-plan">
+      <h3>Planos Setoriais</h3>
+    </div>
+    <div class="onderFilter">
+      <div class="filter-plan">
+        <label for="filter">Filtrar Planos:</label>
+        <div class="custom-select" id="filter">
+          <span class="selected-option">Todos os planos</span>
+          <ul class="options">
+            <li data-value="todos">Todos os planos</li>
+            <li data-value="vigente">Vigentes</li>
+            <li data-value="encerrado">Encerrados</li>
+          </ul>
+        </div>
+      </div>
+      <div class="onder">
+        <label for="sort">Ordenar por:</label>
+        <div class="custom-select" id="sort">
+          <span class="selected-option">Mais Recentes</span>
+          <ul class="options">
+            <li data-value="recent">Mais Recentes</li>
+            <li data-value="oldest">Mais Antigos</li>
+            <li data-value="az">De A a Z</li>
+            <li data-value="za">De Z a A</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="accordion"></div>
+  <div id="pagination"></div>
+</div>
+
+<script src="/assets/js/plans.js"></script>

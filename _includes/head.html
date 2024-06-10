@@ -11,6 +11,18 @@
 
 
   <script async src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   {% include custom-head.html %}
+  <script>
+    $(document).ready(function(){
+    $(".nav-item").click(function(e){
+        if ($(this).next(".sub-menu").length > 0) {
+            e.preventDefault();
+            $(this).next(".sub-menu").toggle();
+            $(".sub-menu").not($(this).next(".sub-menu")).hide();
+        }
+    });
+  });
+  </script>
 </head>
