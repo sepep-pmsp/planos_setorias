@@ -51,15 +51,3 @@
   </div>
 </header>
 <script src="{{ '../assets/js/navegacao.js'| relative_url }}"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function(){
-    $(".nav-item").click(function(e){
-        if ($(this).next(".sub-menu").length > 0) {
-            e.preventDefault();
-            $(this).next(".sub-menu").toggle();
-            $(".sub-menu").not($(this).next(".sub-menu")).hide();
-        }
-    });
-  });
-  </script>
