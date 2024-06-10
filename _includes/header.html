@@ -14,15 +14,6 @@
           {% if site.tagline %}
             <h5 class="site-tagline">{{ site.tagline }}</h5>
           {% endif %}
-          
-          <div class="search-bar">
-            <div class="search">
-              <input id='search-btn' type='checkbox'/>
-              <label for='search-btn'>Show search bar</label>
-              <input id='search-bar' type='text' placeholder='Pesquisar'/>
-            </div>
-            </div>
-          </div>
         </div>
         <div class="navigation">
           {% if site.data.navigation %}
@@ -43,6 +34,10 @@
                   </ul>
                 {% endif %}
               {% endfor %}
+              <div class="search-box">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+                <input type="text" class="input-search" placeholder="Pesquisar">
+              </div>
             </nav>
           {% endif %}
       </div>
@@ -51,3 +46,15 @@
   </div>
 </header>
 <script src="{{ '../assets/js/navegacao.js'| relative_url }}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $(".nav-item").click(function(e){
+        if ($(this).next(".sub-menu").length > 0) {
+            e.preventDefault();
+            $(this).next(".sub-menu").toggle();
+            $(".sub-menu").not($(this).next(".sub-menu")).hide();
+        }
+    });
+  });
+  </script>
