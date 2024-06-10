@@ -1,7 +1,6 @@
 - title: Home
   url: /
-- title: Noticias
-  url: /noticias/
+
 - title: Planos
   url: /planos/
 - title: Dados
@@ -10,7 +9,6 @@
     url: /painel/
   - title: Dados Abertos
     url: https://dados.gov.br/home
-- title: "Sobre"
-  url: /sobre/
+
 - title: Participe +
   url: https://participemais.prefeitura.sp.gov.br/
