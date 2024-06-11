@@ -445,7 +445,7 @@
   },
   {
     "Título": "Plano Municipal de Mobilidade Urbana do Município de São Paulo",
-    "Sigla": "PlanMob/SP",
+    "Sigla": "PlanMob-SP",
     "Plano Municipal": "True",
     "Status": "Vigente",
     "Órgão Coordenador": "SMT",
@@ -648,7 +648,7 @@
     "Link para Acesso": "https://www.prefeitura.sp.gov.br/cidade/secretarias/governo/secretaria_executiva_de_projetos_estrategicos/primeira_infancia/index.php?p=352461"
   },
   {
-    "Título": "Plano Plurianual",
+    "Título": "Plano Pluri Anual",
     "Sigla": "PPA",
     "Plano Municipal": "True",
     "Status": "Vigente",
