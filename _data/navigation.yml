@@ -5,10 +5,10 @@
   url: /planos/
 - title: Dados
   dropdown:
-  - title: Painel de Dados
-    url: /painel/
-  - title: Dados Abertos
-    url: https://dados.gov.br/home
+    - title: Painel de Dados
+      url: /painel/
+    - title: Dados Abertos
+      url: https://dados.gov.br/home
 
 - title: Participe +
   url: https://participemais.prefeitura.sp.gov.br/
