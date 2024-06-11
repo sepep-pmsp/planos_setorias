@@ -9,6 +9,7 @@ gem "jekyll-theme-quartz"
 # Se você deseja usar o GitHub Pages, descomente a linha abaixo e comente a linha `gem "jekyll"`
 gem "github-pages", group: :jekyll_plugins
 
+
 # Gems para plugins do Jekyll
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
