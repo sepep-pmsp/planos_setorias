@@ -7,7 +7,7 @@ gem "jekyll", "~> 4.3.3"
 gem "jekyll-theme-quartz"
 
 # Se você deseja usar o GitHub Pages, descomente a linha abaixo e comente a linha `gem "jekyll"`
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 
 # Gems para plugins do Jekyll
 group :jekyll_plugins do
