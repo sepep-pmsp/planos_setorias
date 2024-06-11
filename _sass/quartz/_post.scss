@@ -35,6 +35,13 @@
   }
 }
 
+.title-plan{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: -webkit-xxx-large;
+  color: #474747;
+}
+
 .filt-title-onder{
   display: flex;
   align-items: center;
@@ -71,6 +78,26 @@
 .selected-option {
   display: block;
   padding: 10px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    border: solid #1e83ff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transition: transform 0.3s;
+
+    
+    transform: rotate(45deg);
+  }
+
+  &.open::after {
+    transform: translateY(-50%) rotate(135deg); 
+  }
 }
 
 .options {
@@ -119,12 +146,12 @@
 }
 
 #accordion{
-  margin: 5rem;
+  margin: 0 5rem 2rem 5rem;
 }
 .accordion-header {
   position: relative;
   cursor: pointer;
-  padding-right: 20px; // Ajustar para dar espaço para a seta
+  padding-right: 20px; 
 
   &::after {
     content: '';
@@ -138,12 +165,12 @@
     padding: 4px;
     transition: transform 0.3s;
 
-    // Cria a seta
+    
     transform: rotate(45deg);
   }
 
   &.open::after {
-    transform: translateY(-50%) rotate(135deg); // Ajusta a rotação quando aberto
+    transform: translateY(-50%) rotate(135deg); 
   }
 }
 
