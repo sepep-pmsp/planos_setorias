@@ -15,13 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: var(--accent-color);
   text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
 }
 
 figure {
