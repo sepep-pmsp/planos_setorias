@@ -1,6 +1,6 @@
 .site-header {
   color: var(--header-color);
-  background: #ffc71b no-repeat center center;
+  background: $color-primary no-repeat center center;
   background-size: cover;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .site-header-shield {
-  background-color: #ffc71b;
+  background-color: $color-primary;
 }
 
 .site-header-content {
@@ -239,17 +239,17 @@
   flex-wrap: wrap;
   align-content: center;
   position: relative; 
-  background-color: #006bf7;
+  background-color: $color-secondary;
   
 
   .nav-item{
-    color: white;
+    color: $White;
     width: 10rem;
     text-align: center;
 
     &:hover{
-      background-color: #fff;
-      color: #006bf7;
+      background-color: $White;
+      color: $Chocolate;
       border-radius: 5rem;
     }
   }
@@ -269,7 +269,7 @@
   z-index: 999;
   right: 42%;
   height: 5rem;
-  border: 1px solid #006bf7;
+  border: 1px solid $Chocolate;
   border-radius: 1rem;
   width: 12rem;
   display: flex;
@@ -277,7 +277,7 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffffff;
+  background-color: $White;
   
 }
 
@@ -292,7 +292,7 @@
 }
 
 .nav-item-sub{
-  color: #006bf7;
+  color: $Chocolate;
 
   &:hover{
     
