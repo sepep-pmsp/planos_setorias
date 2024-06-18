@@ -4,6 +4,15 @@
   background-size: cover;
 }
 
+.site-header-small-content{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .site-header.outer{
     margin: 0;
     
@@ -45,11 +54,13 @@
 // Img da header
 
 .logo-spplanos{
-  height: 9rem;
+  height: 16rem;
+  padding: 0 20rem 0 20rem;
 }
 
 .logo-prefeitura{
 	height: 4rem;
+  padding: 0 20rem 0 20rem;
 }
 
 // Barra de Pesquisa

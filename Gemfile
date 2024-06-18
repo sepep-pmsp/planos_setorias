@@ -19,6 +19,7 @@ end
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
+  gem 'google-protobuf', '~> 3.24.0'
 end
 
 # Booster de desempenho para assistir diretórios no Windows
