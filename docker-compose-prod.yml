@@ -29,7 +29,9 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
 
   frontend:
-    build: 
+    build:
+      args:
+      - PATH_PREFIX
       context: .
     image: site-smae:latest
     networks:
@@ -40,7 +42,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.frontend.entrypoints=websecure"
-      - "traefik.http.routers.frontend.rule=(Host(`${HOST_NAME}`) || Host(`www.${HOST_NAME}`)) && PathPrefix(`${PATH}`)"
+      - "traefik.http.routers.frontend.rule=(Host(`${HOST_NAME}`) || Host(`www.${HOST_NAME}`)) && PathPrefix(`${PATH_PREFIX}`)"
       - "traefik.http.routers.frontend.tls.certresolver=certificadofront"
       - "traefik.http.routers.frontend.tls=true"
       - "traefik.http.routers.frontend.tls.domains[0].main=${HOST_NAME}"

@@ -17,4 +17,6 @@ RUN bundle exec jekyll build
 
 FROM nginx:stable
 
-COPY --from=jekyll /site/_site /usr/share/nginx/html
+ARG PATH_PREFIX
+
+COPY --from=jekyll /site/_site /usr/share/nginx/html${PATH_PREFIX}
