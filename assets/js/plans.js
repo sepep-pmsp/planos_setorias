@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   ${linkAcesso}
               </div>
               <div class="image-content">
-                  <img src="{{ imgSrc | relative_url }}" alt="${plan.Título}">
+                  <img src="${imgSrc}" alt="${plan.Título}">
               </div>
           `;
 
