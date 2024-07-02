@@ -1,0 +1,29 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Planos Municipais
+email: codata@prefeitura.sp.gov.br
+description: >- # this means to ignore newlines until "baseurl:"
+baseurl: /planosmunicipais # the subpath of your site, e.g. /blog
+url: localhost # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+theme: jekyll-theme-quartz
+plugins:
+  - jekyll-feed
+  
+remote_theme: vfvong/jekyll-theme-quartz
+
+embedd: https://app.powerbi.com/view?r=eyJrIjoiMjM5NTVmNDYtZWUzMS00NDc5LWE0ZWItMjc5OTQzNzYwNGJkIiwidCI6ImI5YjgwMjQ2LWYzMzgtNGRlZi04YzQ2LWY1MDhiZjY3YzU1ZSJ9
+
+favicon-16x16                        : 'favicon-16x16.png'
+favicon-32x32                        : 'favicon-32x32.png'
+apple-touch-icon                     : 'apple-touch-icon.png'
+android-chrome-512x512               : 'android-chrome-512x512.png'
+android-chrome-192x192               : 'android-chrome-192x192.png'
+favicon                              : 'favicon.ico'
