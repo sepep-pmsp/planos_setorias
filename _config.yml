@@ -19,7 +19,7 @@ plugins:
   
 remote_theme: vfvong/jekyll-theme-quartz
 
-embedd: https://app.powerbi.com/view?r=eyJrIjoiMjM5NTVmNDYtZWUzMS00NDc5LWE0ZWItMjc5OTQzNzYwNGJkIiwidCI6ImI5YjgwMjQ2LWYzMzgtNGRlZi04YzQ2LWY1MDhiZjY3YzU1ZSJ9
+embedd: https://app.powerbi.com/view?r=eyJrIjoiZTlmMjdhZGEtNjNmMy00OGFlLTk1NWMtMWJiMmExMWNhOTc0IiwidCI6ImIxOTQ4ZDJkLWFkMGUtNGM4Ny05MzM3LWVlYzE1NGQ5NDhlOSJ9
 
 favicon-16x16                        : 'favicon-16x16.png'
 favicon-32x32                        : 'favicon-32x32.png'
