@@ -201,3 +201,13 @@
   max-width: 15rem; 
   height: auto;
 }
+
+// Painel de dados
+.painel-dados{
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
