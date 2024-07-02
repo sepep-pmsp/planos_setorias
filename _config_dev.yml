@@ -8,7 +8,7 @@ title: Planos Municipais
 email: codata@prefeitura.sp.gov.br
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: /planosmunicipais # the subpath of your site, e.g. /blog
-url: https://projetos.codata.prefeitura.sp.gov.br # the base hostname & protocol for your site, e.g. http://example.com
+url: localhost # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -19,7 +19,7 @@ plugins:
   
 remote_theme: vfvong/jekyll-theme-quartz
 
-embedd: https://app.powerbi.com/view?r=eyJrIjoiZTlmMjdhZGEtNjNmMy00OGFlLTk1NWMtMWJiMmExMWNhOTc0IiwidCI6ImIxOTQ4ZDJkLWFkMGUtNGM4Ny05MzM3LWVlYzE1NGQ5NDhlOSJ9
+embedd: https://app.powerbi.com/view?r=eyJrIjoiMjM5NTVmNDYtZWUzMS00NDc5LWE0ZWItMjc5OTQzNzYwNGJkIiwidCI6ImI5YjgwMjQ2LWYzMzgtNGRlZi04YzQ2LWY1MDhiZjY3YzU1ZSJ9
 
 favicon-16x16                        : 'favicon-16x16.png'
 favicon-32x32                        : 'favicon-32x32.png'

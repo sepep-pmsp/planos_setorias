@@ -25,5 +25,11 @@
         }
     });
   });
+  var url = '{{ site.url }}';
+  var baseurl = '{{ site.baseurl }}';
+
+  function gen_url(path) {
+    return `${url}${baseurl}${path}`
+  }
   </script>
 </head>
