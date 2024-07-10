@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const resumo = plan.Resumo || '';
             const vigencia = plan.Início && plan.Fim ? `<p>Vigência: ${plan.Início} - ${plan.Fim}</p>` : '';
             const orgaoCoordenador = plan["Órgão Coordenador"] ? `<p>Órgão Responsável: ${plan["Órgão Coordenador"]}</p>` : '';
-            const linkAcesso = plan["Link para Acesso"] ? `<p><a href="${plan["Link para Acesso"]}">Mais informações</a></p>` : '';
+            const linkAcesso = plan["Link para Acesso"] ? `<p><button class="btn-informacao"><a href="${plan["Link para Acesso"]}" target="_blank">Mais informações</a></button></p>` : '';
   
             let imgSrc = '';
             if (plan.Sigla) {

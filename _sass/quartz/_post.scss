@@ -211,3 +211,46 @@
   align-items: center;
   margin-bottom: 3.5rem;
 }
+
+
+.btn-informacao {
+  display: inline-block;
+  width: 11em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: black;
+  border: 1px solid $color-secondary;
+  border-radius: 6px;
+  position: relative;
+  background-color: $color-secondary;
+}
+
+.btn-informacao::before {
+  position: absolute;
+  content: "";
+  background: $color-primary;
+  width: 244px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 36%;
+}
+
+.btn-informacao:hover, a {
+  color:  $White;
+}
+
+.btn-informacao:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.btn-informacao:hover::before {
+  top: -30px;
+  left: -30px;
+}
