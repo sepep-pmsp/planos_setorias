@@ -151,7 +151,8 @@
 .accordion-header {
   position: relative;
   cursor: pointer;
-  padding-right: 20px; 
+  padding-right: 20px;
+  font-size: 1.4rem;
 
   &::after {
     content: '';
@@ -178,7 +179,7 @@
   border: 1px solid #000;
   border-radius: 2rem;
   margin: 1rem;
-  padding: 1rem;
+  padding: 1.7rem;
 }
 
 .accordion-content {
@@ -190,16 +191,45 @@
   align-items: flex-start;
 }
 
+.accordion-header{
+  color: #D97034;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  padding-left: 3rem;
+}
+
+.vigencia,
+.vigencia-r,
+.responsavel,
+.respon-r,
+.resumo{
+  margin: 0;
+  padding: 0;
+}
+
+.vigencia,
+.responsavel{
+  margin: 1.5rem 0 0 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.resumo{
+  margin: 1rem 0 0 0;
+  width: 68rem;
+}
+
 .text-content {
-  flex: 1;
-  margin-right: 20px;
-  width: 7rem;
+  margin: 0 20px 0 0;
+  width: 51rem;
   word-break: break-all;
+  padding-left: 3rem;
 }
 
 .image-content img {
-  max-width: 15rem; 
+  max-width: 20rem;
   height: auto;
+  padding-right: 9rem;
 }
 
 // Painel de dados

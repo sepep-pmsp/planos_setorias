@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
             accordionContent.classList.add('accordion-content');
   
             const resumo = plan.Resumo || '';
-            const vigencia = plan.Início && plan.Fim ? `<p>Vigência: ${plan.Início} - ${plan.Fim}</p>` : '';
-            const orgaoCoordenador = plan["Órgão Coordenador"] ? `<p>Órgão Responsável: ${plan["Órgão Coordenador"]}</p>` : '';
+            const vigencia = plan.Início && plan.Fim ? `<p class="vigencia">Vigência: </p><p class="vigencia-r"> ${plan.Início} - ${plan.Fim}</p>` : '';
+            const orgaoCoordenador = plan["Órgão Coordenador"] ? `<p class="responsavel">Órgão Responsável: </p><pclass="respon-r"> ${plan["Órgão Coordenador"]}</p>` : '';
             const linkAcesso = plan["Link para Acesso"] ? `<p><button class="btn-informacao"><a href="${plan["Link para Acesso"]}" target="_blank">Mais informações</a></button></p>` : '';
   
             let imgSrc = '';
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
             accordionContent.innerHTML = `
                 <div class="text-content">
-                    <p>${resumo}</p>
+                    <p class="resumo">${resumo}</p>
                     ${vigencia}
                     ${orgaoCoordenador}
                     ${linkAcesso}
