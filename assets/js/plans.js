@@ -180,5 +180,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => {
             console.error('Erro ao carregar o JSON:', error);
         });
+    window.renderPlans = renderPlans;
   });
   
