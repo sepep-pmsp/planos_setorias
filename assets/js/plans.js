@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const paginationDiv = document.getElementById('pagination');
     let plans = [];
   
-    const itensPorPagina = 4; 
+    const itensPorPagina = 10; 
     let paginaAtual = 0; 
   
     function renderPlans(plans) {
