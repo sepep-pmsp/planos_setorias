@@ -40,7 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 imgSrc = '/assets/images/img-plans/generic.png';
             }
   
-            imgSrc = gen_url(imgSrc)
+            imgSrc = gen_url(imgSrc);
+
+            const imglink = plan["Link para Acesso"] ? `<a href="${plan["Link para Acesso"]}" target="_blank"><img src="${imgSrc}" alt="${plan.Título}"></a>` : `<img src="${imgSrc}" alt="${plan.Título}">`;
   
             accordionContent.innerHTML = `
                 <div class="text-content">
@@ -50,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     ${linkAcesso}
                 </div>
                 <div class="image-content">
-                    <img src="${imgSrc}" alt="${plan.Título}">
+                    ${imglink} 
                 </div>
             `;
   
