@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const paginationDiv = document.getElementById('pagination');
     let plans = [];
   
-    const itensPorPagina = 4; 
+    const itensPorPagina = 10; 
     let paginaAtual = 0; 
   
     function renderPlans(plans) {
@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
             accordionContent.classList.add('accordion-content');
   
             const resumo = plan.Resumo || '';
-            const vigencia = plan.Início && plan.Fim ? `<p>Vigência: ${plan.Início} - ${plan.Fim}</p>` : '';
-            const orgaoCoordenador = plan["Órgão Coordenador"] ? `<p>Órgão Responsável: ${plan["Órgão Coordenador"]}</p>` : '';
-            const linkAcesso = plan["Link para Acesso"] ? `<p>Mais informações em: <a href="${plan["Link para Acesso"]}">${plan["Link para Acesso"]}</a></p>` : '';
+            const vigencia = plan.Início && plan.Fim ? `<p class="vigencia">Vigência: </p><p class="vigencia-r"> ${plan.Início} - ${plan.Fim}</p>` : '';
+            const orgaoCoordenador = plan["Órgão Coordenador"] ? `<p class="responsavel">Órgão Responsável: </p><pclass="respon-r"> ${plan["Órgão Coordenador"]}</p>` : '';
+            const linkAcesso = plan["Link para Acesso"] ? `<p><button class="btn-informacao"><a href="${plan["Link para Acesso"]}" target="_blank">Mais informações</a></button></p>` : '';
   
             let imgSrc = '';
             if (plan.Sigla) {
@@ -40,17 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
                 imgSrc = '/assets/images/img-plans/generic.png';
             }
   
-            imgSrc = gen_url(imgSrc)
+            imgSrc = gen_url(imgSrc);
+
+            const imglink = plan["Link para Acesso"] ? `<a href="${plan["Link para Acesso"]}" target="_blank"><img src="${imgSrc}" alt="${plan.Título}"></a>` : `<img src="${imgSrc}" alt="${plan.Título}">`;
   
             accordionContent.innerHTML = `
                 <div class="text-content">
-                    <p>${resumo}</p>
+                    <p class="resumo">${resumo}</p>
                     ${vigencia}
                     ${orgaoCoordenador}
                     ${linkAcesso}
                 </div>
                 <div class="image-content">
-                    <img src="${imgSrc}" alt="${plan.Título}">
+                    ${imglink} 
                 </div>
             `;
   
@@ -69,89 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
   
         criarLinksPaginacao();
-        criarControlesPaginacao();
-    }
-    
-    function criarControlesPaginacao() {
-      paginationDiv.innerHTML = '';
-  
-      const numeroDePaginas = Math.ceil(plans.length / itensPorPagina);
-      const firstPageLink = document.createElement('span');
-      firstPageLink.textContent = '<<';
-      firstPageLink.classList.add('pagination-control'); 
-      firstPageLink.addEventListener('click', () => {
-          if (paginaAtual !== 0) {
-              paginaAtual = 0;
-              renderPlans(plans);
-              atualizarLinksAtivos();
-          }
-      });
-      paginationDiv.appendChild(firstPageLink);
-      const prevPageLink = document.createElement('span');
-      prevPageLink.textContent = '<';
-      prevPageLink.classList.add('pagination-control'); 
-      prevPageLink.addEventListener('click', () => {
-          if (paginaAtual > 0) {
-              paginaAtual--;
-              renderPlans(plans);
-              atualizarLinksAtivos();
-          }
-      });
-      paginationDiv.appendChild(prevPageLink);
-  
-      // Links numéricos das páginas
-      for (let i = 0; i < numeroDePaginas; i++) {
-          const link = document.createElement('span');
-          link.textContent = i + 1;
-          link.classList.add('pagination-number'); 
-  
-          if (i === paginaAtual) {
-              link.classList.add('active');
-          }
-  
-          link.addEventListener('click', (function(pagina) {
-              return function() {
-                  paginaAtual = pagina;
-                  renderPlans(plans);
-                  atualizarLinksAtivos();
-              };
-          })(i));
-  
-          paginationDiv.appendChild(link);
-      }
-      const nextPageLink = document.createElement('span');
-      nextPageLink.textContent = '>';
-      nextPageLink.classList.add('pagination-control'); 
-      nextPageLink.addEventListener('click', () => {
-          if (paginaAtual < numeroDePaginas - 1) {
-              paginaAtual++;
-              renderPlans(plans);
-              atualizarLinksAtivos();
-          }
-      });
-      paginationDiv.appendChild(nextPageLink);
-      const lastPageLink = document.createElement('span');
-      lastPageLink.textContent = '>>';
-      lastPageLink.classList.add('pagination-control'); 
-      lastPageLink.addEventListener('click', () => {
-          if (paginaAtual !== numeroDePaginas - 1) {
-              paginaAtual = numeroDePaginas - 1;
-              renderPlans(plans);
-              atualizarLinksAtivos();
-          }
-      });
-      paginationDiv.appendChild(lastPageLink);
-    }
-  
-    function atualizarLinksAtivos() {
-        const links = paginationDiv.querySelectorAll('.pagination-link');
-        links.forEach((link, index) => {
-            if (index === paginaAtual) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        });
     }
   
     function criarLinksPaginacao() {
@@ -177,6 +96,17 @@ document.addEventListener("DOMContentLoaded", function () {
   
           paginationDiv.appendChild(link);
       }
+    }
+  
+    function atualizarLinksAtivos() {
+        const links = paginationDiv.querySelectorAll('.pagination-number');
+        links.forEach((link, index) => {
+            if (index === paginaAtual) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
     }
   
     function filterPlans(plans, filter) {
