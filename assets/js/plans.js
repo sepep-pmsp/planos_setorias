@@ -13,6 +13,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const startIndex = paginaAtual * itensPorPagina;
         const endIndex = Math.min(startIndex + itensPorPagina, plans.length);
         const planosPagina = plans.slice(startIndex, endIndex);
+
+        link = getHashValue()
+        const index = plans.findIndex(plan => plan.linkrelativo === link);
+
+        if (index !== -1) {
+            const pagina = Math.floor(index / itensPorPagina);
+            paginaAtual = pagina;
+        }
   
         planosPagina.forEach(plan => {
             const accordionItem = document.createElement('div');
@@ -68,6 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
             accordionItem.appendChild(accordionHeader);
             accordionItem.appendChild(accordionContent);
             accordion.appendChild(accordionItem);
+
+            if (plan.linkrelativo === link) {
+                if (accordionHeader && accordionContent) {
+                    accordionContent.classList.add('open');
+                    accordionHeader.classList.add('open');
+                    accordionItem.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
         });
   
         criarLinksPaginacao();
@@ -132,6 +148,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    function getHashValue() {
+        return window.location.hash ? window.location.hash.substring(1) : null;
+    }
   
     filterSelect.addEventListener('click', function (e) {
         const options = filterSelect.querySelector('.options');
@@ -165,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
     
-    var achajson = gen_url ('/assets/Json/excel_to_.json')
+    const achajson = gen_url ('/assets/Json/excel_to_.json')
     fetch(achajson)
         .then(response => {
             if (!response.ok) {
