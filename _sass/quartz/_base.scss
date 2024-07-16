@@ -260,3 +260,23 @@ $dark-pri: #d05c2e;
     transform: translate(3px);
   }
 }
+
+/* Estilizar a barra de rolagem */
+::-webkit-scrollbar {
+  width: 0.8rem;  
+}
+
+::-webkit-scrollbar-track {
+  background: #fffefe00;  
+  border-radius: 10rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-primary;  
+  border-radius: 10rem;  
+  border: 1px solid $color-secondary; 
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
