@@ -1,64 +1,53 @@
-.carousels-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: stretch;
-}
-
 .linha{
   margin: 5rem 0 5rem 0;
 }
 
 .carousel {
   position: relative;
-  width: 20%; 
-  margin:0 2rem 0 2rem;
+  width: 30%;
+  margin: auto;
   overflow: hidden;
+  border-left: solid 1px white;
   border-radius: 10px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: stretch;
+  
 
   .carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
   }
 
   .carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
+      min-width: 100%;
+      box-sizing: border-box;
   }
 
   img {
-    width: 100%;
-    height: auto;
-    display: block;
+      width: 100%;
+      height: auto;
+      display: block;
   }
 
   .carousel-indicators {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
 
-    button {
-      border: none;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 50%;
-      width: 10px;
-      height: 10px;
-      margin: 0 5px;
-      cursor: pointer;
+      button {
+          border: none;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 50%;
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+          cursor: pointer;
 
-      &.active {
-        background-color: white;
+          &.active {
+              background-color: white;
+          }
       }
-    }
   }
 }
