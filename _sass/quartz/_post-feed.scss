@@ -1,206 +1,53 @@
-.masonry {
-  column-count: 2;
-  height: 50em;
+.linha{
+  margin: 5rem 0 5rem 0;
+}
+
+.carousel {
+  position: relative;
+  width: 30%;
   margin: auto;
-  width: 60%;;
-  padding: 10px;
-  
-  @media (max-width: 1200px) {
-    columns: 3;
-  }
-  @media (max-width: 992px) {
-    columns: 2;
-  }
-  //@media (max-width: 768px) {columns: 1;}
-}
-
-@mixin circle($i) {
-  border-radius: 100%;
-  height: $i;
-  width: $i;
-}
-
-$bgBlue: #001d38;
-$cartaoBlue: #0a2640;
-
-.conteudoCarousel00{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel01{
-  margin: 0;
-  padding: 0;
-  height: 45vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.centro {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-}
-
-.embrulho {
-  display: flex;
-  grid-gap: 1em;
   overflow: hidden;
-  width: 45em;
+  border-left: solid 1px white;
+  border-radius: 10px;
   
-  & > .interna {
-    display: flex;
-    grid-gap: 2em;
-    transition: all 1s ease-in-out;
-  }
-}
 
-.cartao {
-  border-radius: 0.5em;
-  width: 783px;
-  height: 431px;
-
-  & > img {
-    border-radius: 0.5em;
-    display: block;
-    width: 43.5em;
+  .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
   }
 
-  & > .content {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.747) 80%, rgba(255,255,255,0) 100%);
-    color: black;
-    padding: 1em;
-    position: relative;
-    bottom: 5.313rem;
-
-    & > h2,
-    & > h3 {
-      margin: 0.35em 0;
-    }
-
-    & > h2 {
-      color: #000000;
-      font-size: 2rem;
-      line-height: 1;
-    }
+  .carousel-item {
+      min-width: 100%;
+      box-sizing: border-box;
   }
-}
 
-.map {
-  margin-top: -8em;
-  & > button {
-    cursor: pointer;
-    position: relative;
-    user-select: none;
-    background-color: $bgBlue;
-    border: none;
-    border-radius: 100%;
-    height: 0.75rem;
-    width: 0.75rem;
+  img {
+      width: 100%;
+      height: auto;
+      display: block;
+  }
 
-    &.active {
-      &:after {
-        background: $bgBlue;
-        content: "";
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
+  .carousel-indicators {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      button {
+          border: none;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 50%;
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+          cursor: pointer;
+
+          &.active {
+              background-color: white;
+          }
       }
-    }
-  }
-}
-
-.carousel02{
-  margin: 0;
-  padding: 0;
-  height: 45vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.centro2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
-}
-
-.embrulho2 {
-  display: flex;
-  grid-gap: 1em;
-  overflow: hidden;
-  width: 28em;
-  
-  & > .interna2 {
-    display: flex;
-    grid-gap: 5em;
-    transition: all 1s ease-in-out;
-  }
-}
-
-.cartao2 {
-  border-radius: 0.5em;
-  width: 414px;
-  height: 432px;
-
-  & > img {
-    border-radius: 0.5em;
-    display: block;
-    width: 24.5em;
-    height: 21rem;
-  }
-
-  & > .contentr {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.747) 80%, rgba(255,255,255,0) 100%);
-    color: black;
-    padding: 1em;
-    position: relative;
-    bottom: 5.313rem;
-    width: 26.813rem;
-
-    & > h2,
-    & > h3 {
-      margin: 0.35em 0;
-    }
-
-    & > h2 {
-      color: #000000;
-      font-size: 2rem;
-      line-height: 1;
-    }
-  }
-}
-
-.mapa {
-  margin-top: -7em;
-  & > button {
-    cursor: pointer;
-    position: relative;
-    user-select: none;
-    background-color: $bgBlue;
-    border: none;
-    border-radius: 100%;
-    height: 0.75rem;
-    width: 0.75rem;
-
-    &.active {
-      &:after {
-        background: $bgBlue;
-        content: "";
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-      }
-    }
   }
 }
