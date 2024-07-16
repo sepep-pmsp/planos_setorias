@@ -15,3 +15,23 @@
 .inner {
   width: 100%;
 }
+
+//pagina sobre
+.paginaSobre{
+  margin: 3rem 4rem 3rem 4rem;
+}
+
+.Title-About{
+  font-size: 3rem;
+  margin: 1rem;
+  color: $color-primary;
+  text-align: center;
+}
+.conteudoSobre,
+.conteudoplanos,
+.conteudoPlano
+{
+  text-align: justify;
+  margin: 1rem;
+  padding: 1rem;
+}
