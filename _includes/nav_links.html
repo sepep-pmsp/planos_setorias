@@ -8,7 +8,7 @@
         {% for subitem in item.dropdown %}
           <li class="menu-item">
             {% if subitem.url contains "http" %}
-              <a class="nav-item-sub {% if page.url == subitem.url %}active{% endif %}" href="{{ subitem.url }}" target="_blank" rel="noopener noreferrer">
+              <a class="nav-item-sub {% if page.url == subitem.url %}active{% endif %}" href="{{ subitem.url }}" target="_blank">
                 {{ subitem.title }}
               </a>
             {% else %}
@@ -22,7 +22,7 @@
     </div>
   {% else %}
     {% if item.url contains "http" %}
-      <a class="nav-item {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+      <a class="nav-item {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}" target="_blank">
         {{ item.title }}
       </a>
     {% else %}
