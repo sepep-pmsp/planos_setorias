@@ -252,10 +252,15 @@
     &:hover{
       background-color: $White;
       color: $Chocolate;
-      border-radius: 5rem;
+      border-radius: 9rem;
+      padding: 0.7rem;
     }
   }
 
+}
+
+.dropdown-toggle{
+  width: 10rem;
 }
 
 .nav {
@@ -267,9 +272,9 @@
 .sub-menu {
   position: absolute;
   display: block;
-  top: 80%; 
+  top: 85%; 
   z-index: 999;
-  right: 42%;
+  right: 30%;
   height: 5rem;
   border: 1px solid $Chocolate;
   border-radius: 1rem;
@@ -290,6 +295,7 @@
   
   &:hover{
     color: #000;
+
   }
 }
 
