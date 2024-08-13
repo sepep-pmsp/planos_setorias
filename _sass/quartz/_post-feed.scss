@@ -19,14 +19,16 @@
 
   .carousel-item {
       min-width: 100%;
+      min-height: 100%;
       box-sizing: border-box;
       display: flex;
       justify-content: center;
   }
 
   img {
-      height: 50vh;
-      display: block;
+    max-height: 50vh;
+    display: block;
+    max-width: 100%;
   }
 
   .carousel-indicators {
