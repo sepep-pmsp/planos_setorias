@@ -1,82 +1,57 @@
-document.addEventListener('DOMContentLoaded', function () {
-    let plans = [];
+document.addEventListener('DOMContentLoaded', async function () {
+    const carouselInner = document.getElementById('carousel-inner');
+    const carouselIndicators = document.getElementById('carousel-indicators');
 
-    const carouselsData = [
-        { id: 'carousel-inner', indicatorsId: 'carousel-indicators', plans: [] },
-    ];
+    if (!carouselInner || !carouselIndicators) return;
 
-    const carouselControllers = new Map();
-    const achajson = gen_url('/assets/Json/excel_to_.json');
+    const basePath = `${BASE_URL}/assets/images/image_carousel/`;
+    const extensions = /\.(png|jpe?g|webp|gif|avif|svg)$/i;
 
-    fetch(achajson)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
-        .then(data => {
-            plans = data;
-            renderCarousels();
-        })
-        .catch(error => {
-            console.error('Erro ao carregar o JSON:', error);
-        });
+    let currentIndex = 0;
+    let slides = [];
 
-    function renderCarousels() {
-        carouselsData.forEach((carouselData, index) => {
-            carouselData.plans = plans
-                .filter(plan => plan.id === '1')
-                .slice(index * 10, (index + 1) * 10);
+    try {
+        // Busca os arquivos disponíveis na pasta.
+        const response = await fetch(basePath);
 
-            renderCarousel(carouselData);
-        });
-    }
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-    function renderCarousel(carouselData) {
-        const carouselInner = document.getElementById(carouselData.id);
-        const carouselIndicators = document.getElementById(carouselData.indicatorsId);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const directoryUrl = new URL(basePath, window.location.href);
 
-        if (!carouselInner || !carouselIndicators) return;
+        const images = [...new Set(
+            Array.from(doc.querySelectorAll('a[href]'))
+                .map(link => new URL(
+                    link.getAttribute('href'),
+                    directoryUrl
+                ))
+                .filter(url =>
+                    url.origin === directoryUrl.origin &&
+                    url.pathname.startsWith(directoryUrl.pathname) &&
+                    !url.pathname.slice(directoryUrl.pathname.length).includes('/') &&
+                    extensions.test(url.pathname)
+                )
+                .map(url => url.href)
+        )].sort((a, b) =>
+            a.localeCompare(b, undefined, { numeric: true })
+        );
 
-        const basePath = `${BASE_URL}/assets/images/img-plans`;
-        const extensions = ['png', 'jpeg', 'jpg'];
-        let currentIndex = 0;
+        if (images.length === 0) {
+            console.warn('Nenhuma imagem encontrada na pasta do carrossel.');
+            return;
+        }
 
-        const slides = carouselData.plans.map((plan, index) => {
-            const imgSources = [];
-
-            // Prioriza a sigla e depois tenta o título, em todas as extensões.
-            [plan.Sigla, plan.Título].forEach(name => {
-                if (typeof name !== 'string' || !name.trim()) return;
-
-                const fileName = encodeURIComponent(name.trim());
-                extensions.forEach(extension => {
-                    imgSources.push(`${basePath}/${fileName}.${extension}`);
-                });
-            });
-
-            // A imagem genérica é o último recurso.
-            const sources = [...new Set([...imgSources, `${basePath}/generic.png`])];
-
+        // Cria os slides.
+        slides = images.map((image, index) => {
             const item = document.createElement('div');
             item.className = 'carousel-item';
 
-            const link = document.createElement('a');
-            link.href = `${BASE_URL}/planos#${plan.linkrelativo}`;
-
             const img = document.createElement('img');
-            img.alt = plan.Título || plan.Sigla || 'Plano';
-
-            let attempt = 0;
-
-            img.addEventListener('error', () => {
-                attempt++;
-
-                if (attempt < sources.length) {
-                    img.src = sources[attempt];
-                }
-            });
+            img.alt = `Imagem ${index + 1}`;
 
             img.addEventListener('load', () => {
                 if (index === currentIndex) {
@@ -84,63 +59,100 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
 
-            link.appendChild(img);
-            item.appendChild(link);
-            img.src = sources[0];
+            img.src = image;
+
+            item.appendChild(img);
 
             return item;
         });
 
         carouselInner.replaceChildren(...slides);
 
-        carouselIndicators.replaceChildren(...carouselData.plans.map((_, index) => {
-            const button = document.createElement('button');
-            button.addEventListener('click', () => setCurrentSlide(index));
-            return button;
-        }));
+        // Cria os indicadores.
+        carouselIndicators.replaceChildren(
+            ...images.map((_, index) => {
+                const button = document.createElement('button');
+                button.type = 'button';
 
-        const items = carouselInner.querySelectorAll('.carousel-item');
+                button.setAttribute(
+                    'aria-label',
+                    `Exibir imagem ${index + 1}`
+                );
 
-        if (items.length === 0) return;
+                button.addEventListener('click', () => {
+                    setCurrentSlide(index);
+                });
 
+                return button;
+            })
+        );
+
+        // Ajusta a altura do carrossel.
         function adjustCarouselHeight() {
-            const activeItem = items[currentIndex];
+            const activeItem = slides[currentIndex];
+
             if (!activeItem) return;
 
             const img = activeItem.querySelector('img');
-            if (!img || !img.complete || img.naturalWidth === 0) return;
+
+            if (!img || !img.complete || img.naturalWidth === 0) {
+                return;
+            }
 
             carouselInner.style.height = `${img.height}px`;
         }
 
+        // Atualiza a posição do carrossel.
         function updateCarousel() {
-            carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+            carouselInner.style.transform =
+                `translateX(-${currentIndex * 100}%)`;
+
             adjustCarouselHeight();
+
+            Array.from(carouselIndicators.children).forEach(
+                (button, index) => {
+                    button.classList.toggle(
+                        'active',
+                        index === currentIndex
+                    );
+                }
+            );
         }
 
+        // Seleciona uma imagem.
         function setCurrentSlide(index) {
-            if (!Number.isInteger(index) || index < 0 || index >= items.length) return;
+            if (
+                !Number.isInteger(index) ||
+                index < 0 ||
+                index >= slides.length
+            ) {
+                return;
+            }
 
             currentIndex = index;
             updateCarousel();
         }
 
-        carouselControllers.set(carouselData.id, setCurrentSlide);
-
-        if (items.length > 1) {
+        // Transição automática a cada 3 segundos.
+        if (slides.length > 1) {
             setInterval(() => {
-                currentIndex = (currentIndex + 1) % items.length;
+                currentIndex = (currentIndex + 1) % slides.length;
                 updateCarousel();
             }, 3000);
         }
 
-        window.addEventListener('resize', adjustCarouselHeight);
-        updateCarousel();
-    }
+        // Mantém a compatibilidade com chamadas externas.
+        window.setSlide = function (index, carouselId) {
+            if (carouselId === 'carousel-inner') {
+                setCurrentSlide(index);
+            }
+        };
 
-    // Mantém a função disponível para chamadas externas, caso existam.
-    window.setSlide = function (index, carouselId) {
-        const setCurrentSlide = carouselControllers.get(carouselId);
-        if (setCurrentSlide) setCurrentSlide(index);
-    };
+        window.addEventListener('resize', adjustCarouselHeight);
+
+        updateCarousel();
+
+    } catch (error) {
+        console.error('Erro ao carregar imagens do carrossel:', error);
+    }
 });
